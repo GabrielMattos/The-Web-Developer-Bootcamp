@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Exercise</title>
+    <H1>Register</H1>
+</head>
+<body>
+    <form action="">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName_ID" value="" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName_ID" value="" required>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="genderMale_ID" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="genderFemale_ID" value="female">
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="genderOther_ID" value="other">
+        </div>
+        <div>
+            <label for="">
+                Email:
+                <input type="email" placeholder="Your email" name="email" required>
+            </label>
+            <label for=""">
+                Password:
+                <input type="password" type="password" name="password" pattern=".{5,10}" required title="5 to 10 characters">
+            </label>
+        </div>
+        <div>
+            <label for="">
+                Birthay:
+                <select name="month" id="">
+                    <option value="">Month</option>
+                    <option value="">Jan</option>
+                    <option value="">Fev</option>
+                    <option value="">Mar</option>
+                </select>
+                <select name="day" id="">
+                        <option value="">Day</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                </select>
+                <select name="year" id="">
+                        <option value="">Year</option>
+                        <option value="">1999</option>
+                        <option value="">2000</option>
+                        <option value="">2001</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="agreed">I agreed...</label>
+            <input type="checkbox" id="agreed" name="agreed">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
